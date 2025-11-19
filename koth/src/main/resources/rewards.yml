@@ -1,6 +1,0 @@
-# Rewards are stored here
-# Format:
-# kothname:
-#   - serialized item data
-
-rewards: {}
