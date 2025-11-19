@@ -1,0 +1,7 @@
+# Timer configuration for each KOTH
+# Format:
+# kothname:
+#   time-between: seconds between each koth event
+#   capture-time: seconds needed to capture
+
+timers: {}
