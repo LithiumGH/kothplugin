@@ -9,3 +9,28 @@ commands:
     description: Main KOTH command
     usage: /koth <wand|create|edit|reward|start|stop|list>
     aliases: [kingofthehill]
+permissions:
+  koth.admin:
+    description: Allows access to all KOTH admin commands
+    default: op
+  koth.wand:
+    description: Allows getting the KOTH wand
+    default: op
+  koth.create:
+    description: Allows creating KOTHs
+    default: op
+  koth.edit:
+    description: Allows editing KOTHs
+    default: op
+  koth.reward:
+    description: Allows managing KOTH rewards
+    default: op
+  koth.start:
+    description: Allows starting KOTHs
+    default: op
+  koth.stop:
+    description: Allows stopping KOTHs
+    default: op
+  koth.list:
+    description: Allows listing KOTHs
+    default: true
