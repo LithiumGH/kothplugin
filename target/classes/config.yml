@@ -1,0 +1,34 @@
+messages:
+  prefix: '&8[&6KOTH&8] &r'
+  wand-given: '&aYou have been given the KOTH wand!'
+  first-position: '&aFirst position set at &e%x%, %y%, %z%'
+  second-position: '&aSecond position set at &e%x%, %y%, %z%'
+  koth-created: '&aKOTH &e%name% &ahas been created!'
+  koth-already-exists: '&cA KOTH with that name already exists!'
+  koth-not-found: '&cKOTH &e%name% &cnot found!'
+  no-permission: '&cYou do not have permission to do that!'
+  invalid-usage: '&cInvalid usage! Use: &e%usage%'
+  koth-started: '&aKOTH &e%name% &ahas started!'
+  koth-stopped: '&aKOTH &e%name% &ahas been stopped!'
+  koth-already-active: '&cA KOTH is already active!'
+  no-active-koth: '&cNo KOTH is currently active!'
+  player-entered: '&e%player% &ahas entered the KOTH!'
+  player-left: '&e%player% &ahas left the KOTH!'
+  koth-won: '&6&l%player% &ahas captured the KOTH!'
+  koth-list: '&aAvailable KOTHs: &e%list%'
+  rewards-saved: '&aRewards have been saved for &e%name%&a!'
+  gui-time-title: '&6Set Time Between KOTHs'
+  gui-time-lore: '&7Current: &e%time% seconds|&7Click to change'
+  gui-reward-title: '&6Manage Rewards'
+  gui-reward-lore: '&7Click to manage rewards'
+  bossbar-title: '&6KOTH &8| &e%holder% &8| &c%time%'
+  bossbar-no-holder: '&6KOTH &8| &7No Holder &8| &c%time%'
+
+particle:
+  selection: REDSTONE
+  border: FLAME
+  border-interval: 20
+
+bossbar:
+  color: YELLOW
+  style: SOLID
