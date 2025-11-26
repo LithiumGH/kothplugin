@@ -1,0 +1,67 @@
+database:
+  type: 'SQLITE'
+  host: 'localhost'
+  port: 3306
+  database: 'koth'
+  username: 'root'
+  password: 'password'
+
+settings:
+  default-capture-time: 300
+  default-mode: 'SOLO'
+  allow-multiple-active: true
+  max-active-koths: 3
+  show-selection-particles: true
+  show-border-particles: true
+  border-particle-interval: 20
+
+modes:
+  SOLO:
+    description: 'Only one player can hold the KOTH'
+    timer-resets-on-contest: false
+    requires-solo-capture: true
+  CONTESTED:
+    description: 'Multiple players contest, no holder until one remains'
+    timer-resets-on-contest: true
+    requires-solo-capture: true
+
+messages:
+  prefix: '&8[&6KOTH&8] &r'
+  wand-given: '&aYou have been given the KOTH wand!'
+  first-position: '&aFirst position set at &e%x%, %y%, %z%'
+  second-position: '&aSecond position set at &e%x%, %y%, %z%'
+  koth-created: '&aKOTH &e%name% &ahas been created!'
+  koth-already-exists: '&cA KOTH with that name already exists!'
+  koth-not-found: '&cKOTH &e%name% &cnot found!'
+  no-permission: '&cYou do not have permission to do that!'
+  invalid-usage: '&cInvalid usage! Use: &e%usage%'
+  koth-started: '&aKOTH &e%name% &ahas started!'
+  koth-stopped: '&aKOTH &e%name% &ahas been stopped!'
+  koth-already-active: '&cKOTH &e%name% &cis already active!'
+  max-koths-active: '&cMaximum number of active KOTHs reached!'
+  no-active-koth: '&cNo KOTH is currently active!'
+  player-entered: '&e%player% &ahas entered the KOTH!'
+  player-left: '&e%player% &ahas left the KOTH!'
+  koth-contested: '&cThe KOTH is being contested!'
+  koth-won: '&6&l%player% &ahas captured the KOTH &e%name%&a!'
+  koth-list: '&aAvailable KOTHs: &e%list%'
+  active-koth-list: '&aActive KOTHs: &e%list%'
+  rewards-saved: '&aRewards have been saved for &e%name%&a!'
+  config-reloaded: '&aConfiguration reloaded successfully!'
+  gui-time-title: '&6Set Capture Time'
+  gui-time-lore: '&7Current: &e%time% seconds|&7Click to change'
+  gui-mode-title: '&6Set KOTH Mode'
+  gui-mode-lore: '&7Current: &e%mode%|&7Click to change'
+  gui-reward-title: '&6Manage Rewards'
+  gui-reward-lore: '&7Click to manage rewards'
+  bossbar-title: '&6KOTH %name% &8| &e%holder% &8| &c%time%'
+  bossbar-no-holder: '&6KOTH %name% &8| &7No Holder &8| &c%time%'
+  bossbar-contested: '&6KOTH %name% &8| &cContested &8| &c%time%'
+
+particle:
+  selection: REDSTONE
+  border: FLAME
+
+bossbar:
+  color: YELLOW
+  style: SOLID
